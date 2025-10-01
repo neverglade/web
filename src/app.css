@@ -1,1 +1,55 @@
 @import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Fraunces Variable", serif;
+  --font-sans: "Outfit Variable", sans-serif;
+
+  --color-earth: #FFFBEF;
+  --color-root: #F2EFDF;
+  --color-heartwood: #EFEBD7;
+  --color-sapwood: #EAE6CC;
+  --color-bark: #DED8BA;
+  --color-branch: #D2CCAD;
+  --color-leaf: #B5BDA8;
+
+  --color-textbase: #546168;
+  --color-subtext1: #67767F;
+  --color-subtext0: #809598;
+
+  --color-lichen: #98AC0C;
+  --color-moss: #3CAF83;
+  --color-ochre: #DFA000;
+  --color-aurora: #53C6C2;
+  --color-rust: #F57D26;
+  --color-ember: #F85552;
+  --color-peony: #DF69BA;
+  --color-lavender: #9990EF;
+  --color-sky: #3A94C5;
+
+}
+
+.dark {
+  --color-earth: #1E2326;
+  --color-root: #272E33;
+  --color-heartwood: #2E383C;
+  --color-sapwood: #374145;
+  --color-bark: #414B50;
+  --color-branch: #495156;
+  --color-leaf: #4F5B58;
+
+  --color-textbase: #D3C6AA;
+  --color-subtext1: #B2A996;
+  --color-subtext0: #837C6D;
+
+  --color-lichen: #A7C080;
+  --color-moss: #83C092;
+  --color-ochre: #DBBC7F;
+  --color-aurora: #7FBBB3;
+  --color-rust: #E69875;
+  --color-ember: #E67E80;
+  --color-peony: #D699B6;
+  --color-lavender: #B6AFF3;
+  --color-sky: #85B1F8;
+}
